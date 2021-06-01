@@ -1,0 +1,53 @@
+.descriptionDetails {
+    margin: 25px 0;
+
+    .wrapperInfos {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contentText {
+        .itemText {
+            padding: 25px 0;
+            
+            span {
+                display: block;
+            }
+            
+            .labelText {
+                font-family: 'Celias Light';
+            }
+            
+            .valueText {
+                font-family: 'Celias Bold';
+            }
+        }
+    } 
+
+    .contentImage {
+        img {
+            display: block;
+            object-fit: contain;
+            object-position: center;
+            width: 175px;
+            height: 300px;
+        }
+    }
+    
+    .wrapperBtn {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btnCard {
+        display: inline-block;
+        border-radius: 25px;
+        padding: 10px;
+        width: 100%;
+        background-color: #000000;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+    }
+}

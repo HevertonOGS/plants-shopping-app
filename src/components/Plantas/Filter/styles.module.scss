@@ -1,0 +1,112 @@
+.containerFilter {
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(225, 225, 225, .5);
+
+    backdrop-filter: blur(5px);
+
+    &.active {
+        visibility: visible;
+
+        .filterArea {
+            bottom: 0;
+            transition: .5s;
+        }
+    }
+
+    .btnClose { 
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -65px;
+        left: 50%;
+        margin-left: -25px;
+        border: 0;
+        border-radius: 50%;
+        padding: 15px;
+        width: 50px;
+        height: 50px;
+        font-family: 'Celias';
+        background-color: #fcfcfc;
+
+        img {
+            display: flex;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+   
+   .filterArea {
+       position: absolute;
+       width: 100%;
+       bottom: -100%;
+       border-top-left-radius: 50px;
+       border-top-right-radius: 50px;
+       padding: 35px;
+       background-color: #fcfcfc;
+       transition: .5s;
+
+       .headerArea {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .titleSection {
+            margin: 0;
+            font-family: 'Celias Light';
+        }
+        
+        .btnClear {
+            border: 0;
+            background: transparent;
+            font-family: 'Celias Thin';
+            color: #c4c7cb;
+        }
+        
+        .listFilter {
+            padding: 0;
+            margin-top: 25px;
+
+            .listFilterItem {
+                margin-bottom: 25px;
+                border-radius: 25px;
+                padding: 20px 25px;
+                background-color: #fefefe;
+                box-shadow: 0px 10px 15px 5px rgba(150, 150, 150, 0.15);
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .filterContent {
+                    display: grid;
+                    grid-template-columns: 1fr 6fr 2fr;
+
+                    button {
+                        border: 0;
+                        background: transparent;
+                    }
+                
+                    .btnOpen {
+                        font-family: 'Celias Black';
+                        color: #000;
+                    }
+                    
+                    .btnClear {
+                        font-family: 'Celias Thin';
+                        color: #c4c7cb;
+                    }
+                }
+            }
+            
+        }
+        
+   }
+   
+}

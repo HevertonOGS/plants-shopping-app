@@ -1,0 +1,141 @@
+.formCreditCard {
+    padding: 25px 7.5px;
+    width: 100%;
+
+    .formGroup {
+        margin: 15px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        label {
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-shadow: none;
+            padding: 10px 15px;
+            width: 100%;
+        }
+
+        .formSwitch {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+
+            label {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                padding-left: 10px;
+                font-family: 'Celias';
+                font-size: .9em;
+            }
+        }
+    }
+
+    .formGroupContent {
+        display: flex;
+        align-items: center;
+        
+        .formGroup {
+            margin: 0;
+            width: 50%;
+
+            &:first-child {
+                margin-right: 15px;
+            }
+
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .contentButton {
+        padding-top: 25px;
+
+        .btnEdit,
+        .btnSave {
+            width: 100%;
+            border: 0;
+            border-radius: 25px;
+            padding: 10px 15px;
+            background-color: #1a1a1a;
+            font-family: "Celias Bold";
+            color: #fefefe;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        .btnRemove {
+            width: 100%;
+            margin-top: 10px;
+            border: 0;
+            border-radius: 25px;
+            padding: 5px 15px;
+            background-color: #fefefe;
+            font-family: "Celias Bold";
+            color: #1a1a1a;
+
+            &.hidden {
+                display: none;
+            }
+        }
+
+        .confirmRemoveBox {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            p {
+                text-align: center;
+                font-family: "Celias Bold";
+                font-size: .9em;
+                color: #1a1a1a;
+            }
+
+            .wrapperButton {
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 25px;
+
+                button {
+                    width: 49%;
+                    border: 0;
+                    padding: 5px 10px;
+                    font-family: "Celias Bold";
+                    color: #fefefe;
+
+                    &.danger {
+                        background-color: #FF5733;
+                    }
+
+                    &.success {
+                        background-color: #2DEC75;
+                    }
+                }
+            }
+        }
+    }
+}

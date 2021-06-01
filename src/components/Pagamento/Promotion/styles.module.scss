@@ -1,0 +1,61 @@
+.paymentPromotion {
+    margin-top: 35px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+
+    .paymentPromotion-title {
+        font-size: 1em;
+    }
+    
+    .promotionInput {
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        background-color: #f6f7f8;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    
+    .paymentDetails {
+        margin-top: 25px;
+
+        .paymentDetailsTitle {
+            font-size: 1em;
+        }
+        
+        .listPaymentDetails  {
+            margin-top: 25px;
+
+            .paymentDetailsItem {
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .labelPaymentDetails {
+                    color: #c6c9cd;
+                }
+                
+                .valuePaymentDetails {
+                    font-family: 'Celias Bold';
+                }
+            }
+        }
+    }  
+    
+    .contentPaymentButton {
+        display: flex;
+
+        a {
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            border-radius: 25px;
+            padding: 15px;
+            background-color: #000;
+            text-align: center;
+            text-decoration: none;
+            color: #fefefe;
+        }
+    }
+}

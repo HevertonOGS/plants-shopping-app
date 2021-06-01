@@ -1,0 +1,46 @@
+.highlightCheckout {
+    margin-top: 25px;
+
+    .title {
+        font-weight: 'Celias Medium';
+        font-size: 1.5em;
+    }
+    
+    .wrapperInfo {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        .containerInfo {
+            margin-top: 35px;
+
+            .labelValue {
+                font-weight: 500;
+            }
+            
+            .value {
+                margin-top: 20px;
+                font-family: 'Celias Bold';
+                font-size: 1.5em;
+
+                span {
+                    font-size: 1.75em;
+                }
+            }
+        }
+        
+        .containerImage {
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+
+            img {
+                display: block;
+                object-fit: contain;
+                object-position: center;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}

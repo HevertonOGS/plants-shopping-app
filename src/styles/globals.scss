@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Celias Black';
+  src: local('Celias Black'), 
+       url('/fonts/Celias-Black.woff') format('woff'),
+       url('/fonts/Celias-Black.woff2') format('woff2');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Celias Bold';
+  src: local('Celias Bold'),
+       url('/fonts/Celias-Bold.woff') format('woff'),
+       url('/fonts/Celias-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Celias Medium';
+  src: local('Celias Medium'),
+    url('/fonts/Celias-Medium.woff') format('woff'),
+    url('/fonts/Celias-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Celias';
+  src: local('Celias'), 
+       url('/fonts/Celias.woff') format('woff'),
+       url('/fonts/Celias.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Celias Light';
+  src: local('Celias Light'),
+       url('/fonts/Celias-Light.woff') format('woff'),
+       url('/fonts/Celias-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Celias Thin';
+  src: local('Celias Thin'),
+       url('/fonts/Celias-Light.woff') format('woff'),
+       url('/fonts/Celias-Light.woff2') format('woff2');
+  font-weight: 100;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Celias', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col12 {
+  grid-column-start: 1;
+  grid-column-end: 13;
+}

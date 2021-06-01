@@ -1,0 +1,63 @@
+.header {
+    margin: 25px 0;
+
+    .headerWrapper {
+        display: flex;
+        justify-content: space-between;
+
+        a, button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 50%;
+            padding: 5px;
+            background-color: transparent;
+            transition: .25s;
+
+            &:active {
+                background-color: rgb(231, 231, 231);
+                transition: .25s;
+            }
+            
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .headerLeft {
+            a, button {
+                margin-right: 15px;
+            }
+        }
+
+        .headerRight {
+
+            display: flex;
+
+            a, button {
+                margin-left: 15px;
+            }
+
+            .searchInput {
+                visibility: hidden;
+                width: 0;
+                height: 25px;
+                margin-left: 15px;
+                margin-top: 2.5px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                background: transparent;
+                box-shadow: none;
+                transition: .5s;
+
+                &.active {
+                    visibility: visible;
+                    width: 150px;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}

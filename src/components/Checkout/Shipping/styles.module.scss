@@ -1,0 +1,70 @@
+.shippingCheckout {
+    margin-top: 25px;
+
+    .boxShipping {
+        display: grid;
+        grid-template-columns: 10fr 2fr;
+        padding: 35px 25px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        box-shadow: 0 12px 10px 1px rgba(200, 200, 200, .5);
+
+        .shippingInfo {
+            position: relative;
+            width: 100%;
+
+            .label {
+                font-family: 'Celias Medium';
+            }
+            
+            .textShipping {
+                overflow: hidden; 
+                max-width: 210px;
+                padding-top: 7.5px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: 'Celias';
+                color: #bcc0c5;
+            }
+        }
+        
+        .contentIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                border: 0;
+                background-color: transparent;
+
+                img {
+                    object-fit: contain;
+                    object-position: center;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+
+    .inputGroup {
+        margin: 25px 0;
+        padding: 0 2.5px;
+
+        label {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            display: inline-block;
+            width: 100%;
+            min-height: 68px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            outline: none;
+            resize: none;
+        }
+    }
+}

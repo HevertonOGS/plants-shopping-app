@@ -1,0 +1,18 @@
+.wrapperSliderHome {
+    margin-top: 25px;
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .sliderItem {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.btnSlim {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Celias Bold';
+    font-size: 1em;
+    transition: .25s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .75;
+        transition: .25s;
+    }
+}

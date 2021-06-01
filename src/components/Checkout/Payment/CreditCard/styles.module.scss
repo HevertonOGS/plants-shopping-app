@@ -1,0 +1,36 @@
+.contentNumberCard {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    border-radius: 15px;
+    padding: 20px 10px;
+
+    &.selected {
+        background-color: #f6f7f8;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .numberCard {
+        justify-content: center;
+        padding: 0 10px;
+        text-align: center;
+        font-size: .85em;
+    }
+    
+    .contentIcon {
+        button {
+            border: 0;
+            background-color: transparent;
+
+            img {
+                display: block;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

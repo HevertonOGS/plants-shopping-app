@@ -1,0 +1,113 @@
+.paymentCheckout {
+    margin-top: 35px;
+
+    .boxPayment {
+        padding: 35px 25px 20px 25px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        box-shadow: 0 12px 10px 1px rgba(200, 200, 200, .5);
+
+        .title {
+            font-family: 'Celias Light';
+            font-size: 1.15em;
+        }
+        
+        .contentListOptions {
+            margin-top: 25px;
+
+            .listOptions {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+
+                li {
+                    position: relative;
+                    border-bottom: 2px solid transparent;
+                    border-radius: 2px;
+    
+                    button {
+                        border: 0;
+                        padding: 10px 0;
+                        font-size: .8em;
+                        font-family: 'Celias';
+                        background-color: transparent;
+                    }
+    
+                    &.active {
+                        button {
+                            font-family: 'Celias Black';
+                            border-bottom: 2px solid #000;
+                        }
+                    }
+
+                    &.disabled {
+                        opacity: .5;
+                    }
+
+                    &.disabled::before {
+                        content: 'indispon.';
+                        position: absolute;
+                        background: #000;
+                        top: -10px;
+                        left: 50%;
+                        margin-left: -27.5px;
+                        border-radius: 10px;
+                        padding: 2px 5px;
+                        font-size: 10px;
+                        color: #fefefe;
+                    }
+                }
+            }
+        }
+
+        .contentPaneOptionsPayments {
+            .paneOptionsPayments {
+                &.active {
+                    display: block;
+                }
+
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+
+        .contentModalCreditCard {
+            section {
+                width: 100%;
+            }
+        }
+        
+        .contentBtnAddCard {
+            margin-top: 10px;
+
+            button {
+                width: 100%;
+                display: block;
+                border: 0;
+                padding: 15px 0;
+                background-color: transparent;
+                text-align: center;
+                text-decoration: none;
+                font-family: 'Celias Medium';
+                font-size: 1em;
+                color: #000;
+            }
+        }
+    }
+    
+    .contentBtnConfirmation {
+        margin: 35px 0;
+
+        a {
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 12px 10px 1px rgba(200, 200, 200, .5);
+            padding: 15px 0;
+            background-color: #000;
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}

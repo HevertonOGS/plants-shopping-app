@@ -1,0 +1,65 @@
+.contentOffers {
+    margin-top: 25px;
+    padding-bottom: 25px;
+
+    .title {
+        font-family: 'Celias';
+        letter-spacing: 1px;
+    }
+    
+    .listOffers {
+        padding: 0;
+        margin-top: 25px;
+
+        .itemOffer {
+            margin-bottom: 15px;
+
+            .linkOffer {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                padding: 10px 15px;
+                border-radius: 10px;
+                background-color: #ffffff;
+                text-decoration: none;
+
+                .contentImg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    img {
+                        object-fit: contain;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                
+                .titleOffer {
+                    font-family: 'Celias Thin';
+                    font-size: .9em;
+                    letter-spacing: 1px;
+                    color: #000000;
+                }
+                
+                .valueOffer {
+                    margin: 5px 0 0 0;
+                    font-family: 'Celias Black';
+                    color: #000000;
+
+                    span {
+                        font-size: 1.25em;
+                    }
+                }
+                
+                .discountOffer {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    font-family: 'Celias Black';
+                    color: #5aa206;
+                }
+            }
+        }
+    }
+}

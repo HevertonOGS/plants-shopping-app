@@ -1,0 +1,37 @@
+.highlightDetails {
+    margin-top: 25px;
+
+    .wrapperTitleBtnInfo {
+        display: flex;
+        justify-content: space-between;
+
+        .name-plant {
+            font-family: 'Celias Thin';
+            font-size: 1.5em;
+        }
+
+        .btnInfo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 15px;
+            box-shadow: 0 12px 10px 1px rgba(200, 200, 200, .5);
+            padding: 5px 15px;
+            background-color: #ffffff;
+            text-decoration: none;
+            font-family: 'Celias';
+            font-size: .9em;
+            color: #000;
+        }
+    }
+    
+    .value {
+        margin-top: 25px;
+        font-family: 'Celias Bold';
+    }
+    
+    .value span {
+        font-size: 2em;
+    }
+}
