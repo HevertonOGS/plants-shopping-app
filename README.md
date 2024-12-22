@@ -1,23 +1,15 @@
-Application developed using Next.JS with the aim of simulating a store selling plants.
+This project contains programming logic problem solving.
 
 ## Getting Started
 
-First, install the dependencies in the project directory:
+To check the execution and results, go to the directory for each problem:
 
 ```bash
-npm run install
-# or
-yarn install
+cd <directory-name>
 ```
 
-Second, run the development server:
+You will see two JavaScript files, one of which contains an initial resolution of the problem. The other, with the format `[reviewed].js` at the end of its name, is a second implementation, optimized in relation to the first. To run:
 
 ```bash
-npm run dev
-# or
-yarn dev
+node <filename>
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js` or components from `components` directory. The page auto-updates as you edit the file.
